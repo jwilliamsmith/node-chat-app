@@ -8,9 +8,6 @@ const app = express();
 
 app.use(express.static(publicPath));
 
-app.get('/', (req, res) => {
-	res.send('Hello cruel world.');
-})
 
 app.listen(port, () => {
 	console.log(`Server is listening on port ${port}`);
